@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HearthLedger — a household budget site for the whole family. Track income and spending, keep every category inside its budget, and watch savings goals grow. Works fully offline.">
+<title>HearthLedger — Household Budget</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <span class="brand-name">HearthLedger</span>
+    <span class="brand-tag">Household budget</span>
+  </div>
+  <nav class="main-nav" aria-label="Sections">
+    <a href="#/" data-route="">Dashboard</a>
+    <a href="#/transactions" data-route="transactions">Transactions</a>
+    <a href="#/budgets" data-route="budgets">Budgets</a>
+    <a href="#/goals" data-route="goals">Goals</a>
+    <a href="#/reports" data-route="reports">Reports</a>
+  </nav>
+  <div class="household-chip" id="household-chip" title="The household this budget belongs to">The Alvarez household · 4 people</div>
+</header>
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<footer class="page-foot">
+  <p>HearthLedger keeps every figure on your own device: nothing is uploaded, nothing is tracked, and the
+  demo household resets whenever you ask it to. All amounts are in US dollars.</p>
+  <p class="foot-links">
+    <a href="#/">Dashboard</a> · <a href="#/transactions">Transactions</a> · <a href="#/budgets">Budgets</a> ·
+    <a href="#/goals">Goals</a> · <a href="#/reports">Reports</a>
+  </p>
+</footer>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
